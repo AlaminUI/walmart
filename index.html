@@ -1,36 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" prefix="og: http://ogp.me/ns#"   xmlns:fb="https://www.facebook.com/2008/fbml">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:site" content="@site_name">
-  <meta property="twitter:creator" content="@site_name">
-
-  <meta property="twitter:title" content="Walmart landing page">
-  <meta property="og:title" content="Walmart landing page"  />
-
-  <meta name="description" content="description_text" />
-  <meta property="twitter:description" content="description_text">
-  <meta property="og:description" content="description_text"  />
-  
-  <meta property="twitter:image" content="image_link">
-  <meta property="og:image" content="image_link"  />
-  <meta property="og:image:width" content="600"  />
-  <meta property="og:image:height" content="315"  />
-
-  <meta property="og:url" content="website_link"  />
-  <meta property="og:site_name" content="website_link"  />
-  
- 
-  <meta property="og:type" content="product"  />
-  <!-- <meta property="fb:app_id" content=" "  /> -->
-  <meta name='keywords' content=' ' />
-
-  <link rel="canonical" href="website_link" />
+   
 
   <!-- Site Title -->
   <title>Walmart landing page</title>
@@ -40,9 +15,7 @@
   <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
   <!-- All CSS -->
 
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.0/dist/jquery.min.js"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+ 
   <link rel="stylesheet" href="assets/css/video.css">
 
   <link rel="stylesheet" href="assets/css/grid.css">
@@ -471,146 +444,13 @@
 </footer>
  
 <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
-<script>
-
-startedbtn= document.querySelectorAll(".chat-btn");
- counter = 0;
-for(a=0; a<startedbtn.length;a++){
-  startedbtn[a].addEventListener('click',function(){
-counter ++;
-
-if(counter <2){
-  hbspt.forms.create({
-    region: "na1",
-    portalId: "23254949",
-    formId: "252e43f2-700a-411a-98b6-9de963076ab2"
-  });
-}
-  document.querySelector('.hbspt-form').classList.remove("d-none")
- document.querySelector('body').classList.add('form-active')
-  
-      setTimeout(function(){
-     if(counter <2){
-      crossdiv = document.createElement('div');
-        crossdiv.className="cancleform";
-        crossdiv.textContent="X";
-        document.querySelector('.hbspt-form').appendChild(crossdiv) 
-     }
-
-        document.querySelector(".cancleform").addEventListener('click',function(){
-  document.querySelector('.hbspt-form').classList.add("d-none")
-  document.querySelector('body').classList.remove("form-active")
-
-})
-      },3000)
-  })
  
-}
- 
-</script>
   <script src="assets/js/vendor/jquery-3.4.1.min.js"></script>
-  <!-- <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
-  <script src="assets/js/bootstrap.min.js"></script>
-  <script src="assets/js/main.js"></script> -->
-  <script src="assets/js/fancybox.js"></script>
   <script src="assets/js/video.js"></script>
+  <script src="assets/js/main.js"></script>
  
 
-  <script>
-    // Get all sections that have an ID defined
-const sections = document.querySelectorAll("section[id]");
- 
-// Add an event listener listening for scroll
-window.addEventListener("scroll", navHighlighter);
-
-function navHighlighter() {
   
-  // Get current scroll position
-  let scrollY = window.pageYOffset;
-  
-  // Now we loop through sections to get height, top and ID values for each
-  sections.forEach(current => {
-    const sectionHeight = current.offsetHeight  ;
-    const sectionTop = current.offsetTop - 150;
-    sectionId = current.getAttribute("id");
-    
- 
-    if (
-      scrollY > sectionTop &&
-      scrollY <= sectionTop + sectionHeight
-    ){
-      document.querySelector(".nav-items a[href*=" + sectionId + "]").classList.add("active");
-    } else {
-      document.querySelector(".nav-items a[href*=" + sectionId + "]").classList.remove("active");
-    }
-  });
-}
-
-
-$(document).ready(function(){
-    $('a[href^="#"]').on('click', function(event) {
-        if (this.hash !== "") {
-            event.preventDefault();
-            var hash = this.hash;
-            $('html, body').animate({
-                scrollTop: $(hash).offset().top-100
-                
-            }, 200);
-        }
-    });
-});
-
-$(function(){
-    // Hide Header on on scroll down
-  var didScroll;
-  var lastScrollTop = 0;
-  var delta = 5;
-  var navbarHeight = $('header').outerHeight();
-
-  $(window).scroll(function(event){
-    didScroll = true;
-  });
-
-  setInterval(function() { // wait for it... wait for it... wait for it
-    if (didScroll) {
-      hasScrolled();
-      didScroll = false;
-    }
-  }, 200);
-
-  function hasScrolled() {
-        var scrolltop = $(this).scrollTop();
-        // Make sure they scroll more than delta
-        if(Math.abs(lastScrollTop - scrolltop) <= delta)	return;
-
-        // If they scrolled down and are past the navbar, add class .nav-up.
-        // This is necessary so you never see what is "behind" the navbar.
-        
-        if (scrolltop > 120){
-          // On scroll down we add nav-up
-         
-          $('header').addClass('header-sticky');
-        
-        } else {
-          $('header').removeClass('header-sticky');
-        }
-
-        lastScrollTop = scrolltop;
-  }
-});
-
-
-
- 
-  $('#humberger').on('click', function(event) {
-  $('.nav-items').toggleClass("active")
-})
-
-
-$('.nav-items a').on("click",function(){
-  $('.nav-items').removeClass("active")
-})
-  </script>
 </body>
 
 </html>

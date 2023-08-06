@@ -411,12 +411,39 @@
     
     .hbspt-form {
         padding: 32px;
+        z-index: 9999;
+    }
+    .profite-content {
+        padding-right: 0;
+    }
+    .retailer-content {
+        padding-right: 0;
+    }
+    .resources-card {
+        margin-bottom: 40px;
+    }
+    .join-item p span.gred-line:after {
+        bottom: -2px;
+    }
+    .join-item h4 {
+        font-size: 20px;
     }
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 320px) and (max-width: 400.98px) { 
- 
+    .logos img {
+        width: 100%;
+        max-width: 220px;
+    }
+    h2 {
+        line-height: 1.15;
+        font-size: 32px;
+    }
+    a.border-btn {
+     
+        font-size: 20px;
+    }
 }
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 320px) and (max-width: 575.98px) { 
