@@ -428,6 +428,15 @@
     .join-item h4 {
         font-size: 20px;
     }
+    .result-notice {
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+    .result-notice p {
+       
+        font-size: 15px;
+       
+    }
 }
 
 /* Small devices (landscape phones, 576px and up) */
