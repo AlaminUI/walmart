@@ -1,15 +1,3 @@
- 
-
- @font-face {
-  font-family: 'Bogle';
-  src: url('../webfonts/Bogle-BlackItalic.woff2') format('woff2'),
-      url('../webfonts/Bogle-BlackItalic.woff') format('woff'),
-      url('../webfonts/Bogle-BlackItalic.svg#Bogle-BlackItalic') format('svg');
-  font-weight: 900;
-  font-style: italic;
-  font-display: swap;
-}
-
 @font-face {
   font-family: 'Bogle';
   src: url('../webfonts/Bogle-Black.woff2') format('woff2'),
@@ -22,6 +10,27 @@
 
 @font-face {
   font-family: 'Bogle';
+  src: url('../webfonts/Bogle-BlackItalic.woff2') format('woff2'),
+      url('../webfonts/Bogle-BlackItalic.woff') format('woff'),
+      url('../webfonts/Bogle-BlackItalic.svg#Bogle-BlackItalic') format('svg');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+ 
+
+@font-face {
+  font-family: 'Bogle';
+  src: url('../webfonts/Bogle-BoldItalic.woff2') format('woff2'),
+      url('../webfonts/Bogle-BoldItalic.woff') format('woff'),
+      url('../webfonts/Bogle-BoldItalic.svg#Bogle-BoldItalic') format('svg');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+ 
+@font-face {
+  font-family: 'Bogle';
   src: url('../webfonts/Bogle-Bold.woff2') format('woff2'),
       url('../webfonts/Bogle-Bold.woff') format('woff'),
       url('../webfonts/Bogle-Bold.svg#Bogle-Bold') format('svg');
@@ -32,10 +41,20 @@
 
 @font-face {
   font-family: 'Bogle';
-  src: url('../webfonts/Bogle-Italic.woff2') format('woff2'),
-      url('../webfonts/Bogle-Italic.woff') format('woff'),
-      url('../webfonts/Bogle-Italic.svg#Bogle-Italic') format('svg');
-  font-weight: 700;
+  src: url('../webfonts/Bogle-Medium.woff2') format('woff2'),
+      url('../webfonts/Bogle-Medium.woff') format('woff'),
+      url('../webfonts/Bogle-Medium.svg#Bogle-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bogle';
+  src: url('../webfonts/Bogle-MediumItalic.woff2') format('woff2'),
+      url('../webfonts/Bogle-MediumItalic.woff') format('woff'),
+      url('../webfonts/Bogle-MediumItalic.svg#Bogle-MediumItalic') format('svg');
+  font-weight: 500;
   font-style: italic;
   font-display: swap;
 }
@@ -50,15 +69,18 @@
   font-display: swap;
 }
 
+ 
+
 @font-face {
   font-family: 'Bogle';
-  src: url('../webfonts/Bogle-BoldItalic.woff2') format('woff2'),
-      url('../webfonts/Bogle-BoldItalic.woff') format('woff'),
-      url('../webfonts/Bogle-BoldItalic.svg#Bogle-BoldItalic') format('svg');
-  font-weight: bold;
+  src: url('../webfonts/Bogle-Italic.woff2') format('woff2'),
+      url('../webfonts/Bogle-Italic.woff') format('woff'),
+      url('../webfonts/Bogle-Italic.svg#Bogle-Italic') format('svg');
+  font-weight: 400;
   font-style: italic;
   font-display: swap;
 }
+ 
 
 
 /************** Default CSS **************/
@@ -187,25 +209,25 @@ text-decoration: none;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+  -ms-flex-pack: end;
+  justify-content: end;
   gap: 24px;
   margin-top: 15px;
 }
 
 .nav-items ul li a {
-  font-size: 18px;
+  font-size: 19px;
   display: inline-block;
   color: #0D145B;
-  font-weight: 700;
+  font-weight: 500;
   position: relative;
   -webkit-transition: .5s;
   -o-transition: .5s;
   transition: .5s;
-  line-height: 24px;
+  line-height: 23px;
 }
 
 a.chat-btn {
@@ -215,10 +237,11 @@ a.chat-btn {
   border-radius: 32px;
   margin-left: 24px;
   text-align: center;
-  height: 44px;
-  width: 160px;
+  height: 50px;
+  width: 170px;
   font-weight: 700;
-  padding: 13px 20px;
+  padding: 16px 20px;
+  font-weight: 700 !important;
 }
 
 a.chat-btn:hover {
@@ -263,6 +286,7 @@ header {
   z-index: 9991;
   background: #fff;
   width: 100%;
+  position: relative;
 }
 .banner-area {
     text-align: center;
@@ -291,6 +315,7 @@ a.chat-btn.big-btn{
     height: 56px;
     display: block;
     padding: 18px 0px;
+    font-size: 22px !important;
 }
 .fancybox-content {
   max-width: 800px!important;
@@ -607,7 +632,7 @@ section.resources-area {
 .resources-body a {
   font-size: 100%;
   color: #054A91;
-  font-weight: 700;
+  font-weight: 500;
   text-decoration: underline;
 }
 
@@ -651,6 +676,8 @@ img.dreamforce-round-image {
 
 .join-item h4 {
     font-size: 28px;
+    font-weight: 500;
+    color: #000000;
 }
  
 .join-item {
