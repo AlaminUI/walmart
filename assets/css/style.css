@@ -926,4 +926,8 @@ div#humberger {
 .video-wrap video {
   width: 100%;
 }
+/* .video-dimensions {
+  width: 100% !important;
+  height: auto !important;
+} */
 /************** Template CSS End **************/
