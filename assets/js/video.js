@@ -3,7 +3,8 @@ const body = document.body;
 
 function playVideos(e) {
   lvideo(e.currentTarget.dataset.url);
-
+  document.querySelector(".lvideo").classList.add('d-none')
+ document.querySelector('.video-wrap .active').classList.remove('d-none')
   body.classList.add("lvideo-active");
 
   var lvideoWrap = document.createElement("DIV");

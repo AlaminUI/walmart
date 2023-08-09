@@ -239,11 +239,16 @@ a.chat-btn {
   text-align: center;
   height: 50px;
   width: 170px;
-  font-weight: 700;
-  padding: 16px 20px;
   font-weight: 700 !important;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
 }
-
+a.chat-btn span {
+    display: block;
+    line-height: 20px;
+    margin-top: 3px;
+}
 a.chat-btn:hover {
   background: #52a2ffbf;
 }
@@ -313,9 +318,10 @@ a.chat-btn.big-btn{
     max-width: 250px;
     margin: 0 auto;
     height: 56px;
-    display: block;
-    padding: 18px 0px;
     font-size: 22px !important;
+}
+a.chat-btn.big-btn span {
+    margin-top: 6px;
 }
 .fancybox-content {
   max-width: 800px!important;
@@ -460,12 +466,14 @@ b {
 span.gred-line {
   display: inline-block;
   position: relative;
+  padding-bottom: 2px;
+  line-height: 32px;
 }
 
 span.gred-line:after {
   position: absolute;
   left: 0;
-  bottom: 6px;
+  bottom: -4px;
   background: transparent -webkit-gradient(linear, right top, left top, from(#06F27B), color-stop(88%, #3D8AE1), color-stop(100%, #054A91), to(#52A2FF)) 0% 0% no-repeat padding-box;
   background: transparent -o-linear-gradient(right, #06F27B 0%, #3D8AE1 88%, #054A91 100%, #52A2FF 100%) 0% 0% no-repeat padding-box;
   background: transparent linear-gradient(270deg, #06F27B 0%, #3D8AE1 88%, #054A91 100%, #52A2FF 100%) 0% 0% no-repeat padding-box;
@@ -637,7 +645,7 @@ section.resources-area {
 }
 
 .resources-body h4 span.gred-line:after {
-  bottom: 0px;
+  bottom: -4px;
 }
 
 .resources-body p {
@@ -914,5 +922,8 @@ div#humberger {
 .submitted-message p {
   color: #fff;
   font-size: 18px;
+}
+.video-wrap video {
+  width: 100%;
 }
 /************** Template CSS End **************/

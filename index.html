@@ -16,7 +16,7 @@
   <!-- All CSS -->
 
  
-  <link rel="stylesheet" href="assets/css/video.css">
+ 
 
   <link rel="stylesheet" href="assets/css/grid.css">
    
@@ -57,7 +57,7 @@
             <li><a href="#golocal">Last-mile delivery </a></li>
             <li><a href="#Resources"> Resources</a></li>
             <li><a href="#Dreamforce"> Dreamforce</a></li>
-            <li><a class="chat-btn" href="javascript:void(0)"> Let’s chat</a></li>
+            <li><a class="chat-btn" href="javascript:void(0)"> <span>Let’s chat</span></a></li>
           </ul>
         </div>
       </div>
@@ -74,7 +74,7 @@
         <div class="banner-content">
           <h1> Power your local pick-up and delivery</h1>
           <p>Get the proven solutions that help retailers thrive</p>
-          <a class="chat-btn big-btn" href="javascript:void(0)"> Let’s chat</a>
+          <a class="chat-btn big-btn" href="javascript:void(0)"><span>Let’s chat</span></a>
         </div>
       </div>
     </div>
@@ -99,9 +99,10 @@
       <div class="col-lg-7">
         <div class="video-wrap">
  
-          <button class="lvideo" data-url="https://23254949.fs1.hubspotusercontent-na1.net/hubfs/23254949/GIFs/GIF%20with%20AppExchange%20Video.mp4">     <img class="w-100" src="assets/img/video-bg.jpg" />
+          <button id="videoplay" class="lvideo">   <img class="w-100" src="assets/img/video-bg.jpg" />
           <img src="assets/img/play-icon.png" alt="play icon" class="play-btn">
           </button>
+          <video id="video" class="d-none" controls="" loop="" playsinline="" autoplay=""><source src="https://23254949.fs1.hubspotusercontent-na1.net/hubfs/23254949/GIFs/GIF%20with%20AppExchange%20Video.mp4" type="video/mp4"></video>
         </div>
       </div>
     </div>
@@ -122,7 +123,7 @@
         <div class="col-lg-9">
           <div class="store-assist-right">
             <h2>Solve for store fulfillment complexity</h2>
-            <p> Turn your stores into fulfillment centers and power ship from store, pickup and last mile delivery fulfillment methods to deliver convenient customer experiences. Store Assist gives you access to the same scalable technology that Walmart uses. And it enables you to keep the customer experience under your brand and your customer data secure.</p>
+            <p> Turn your stores into fulfillment centers and power ship from store, pickup and last-mile delivery fulfillment methods to deliver convenient customer experiences. Store Assist gives you access to the same scalable technology that Walmart uses. And it enables you to keep the customer experience under your brand and your customer data secure.</p>
           </div>
         </div>
       </div>
@@ -139,7 +140,7 @@
             <p>Store Assist is designed to scale with your business, adapt to your unique fulfillment needs and integrate seamlessly with your systems. Plus, this out-of-the-box mobile app makes it easy to:</p>
                
             <ul>
-              <li><b>• Enhance picking accuracy, speed, and efficiency,</b> to streamline order fulfillment </li>
+              <li><b>• Enhance picking accuracy, speed, and efficiency</b> to streamline order fulfillment </li>
               <li> <b>• Boost sales</b> by enabling better use of in-store inventory and substitutions </li>
               <li><b>• Minimize shipping overhead and logistics</b> by leveraging local stores as fulfillment centers </li>
               <li> <b>• Ensure seamless order delivery</b> by improving handoff experiences for customers and delivery drivers</li>
@@ -183,7 +184,7 @@
           <div class="result-card">
             <p>Pick speeds of</p>
             <h3><span class="gred-line">160+</span>  items</h3>
-            <p>items per hour</p>
+            <p>  per hour</p>
           </div>
         </div>
               
@@ -200,7 +201,7 @@
         <div class="col-12">
           <div class="result-notice">
             <p>*Orders picked since July 2019 <br>
-              ** Wait times at Walmart stores compared from Nov 2020 to June 2021</p>
+              **Wait times at Walmart stores compared from Nov 2020 to June 2021</p>
           </div>
         </div>
       </div>
@@ -247,7 +248,7 @@
                 <ul>
      
                   <li><b>• Big n’ bulky</b></li>
-                  <li><b>• And deliveries up to 20 miles</b> <br> from a pickup point </li>
+                  <li><b>• Deliveries up to 20 miles</b> <br> from a pickup point </li>
                 </ul>
               </div>
            
@@ -292,7 +293,7 @@
       <div class="col-12">
         <div class="resources-title">
           <h2> Drive better experiences, enjoy greater success</h2>
-          <p>Get more insight on how to keep your customers coming back in today’s hybrid shopping world. <b>To access the resources below</b>, please opt-in and review our Privacy Policy.</p>
+          <p>Get more insight on how to keep your customers coming back in today’s hybrid shopping world.  </p>
         </div>
       </div>
     </div>
@@ -353,7 +354,7 @@
           </div>
           <div class="resources-body">
             <h4> <span class="gred-line">Blog </span></h4>
-            <p> <a href="https://www.walmartgolocal.com/content/go-local/go-local-home/articles/batching-orders-to-boost-retail-efficiency.html">Batching Orders to Boost Retail Efficiency</a> – Learn how you could maximize efficiencies and reduce costs</p>
+            <p> <a href="https://www.walmartgolocal.com/content/go-local/go-local-home/articles/batching-orders-to-boost-retail-efficiency.html">Batching orders to boost retail efficiency</a> – Learn how to maximize efficiencies and reduce costs</p>
           </div>
         </div>
       </div>
@@ -365,7 +366,7 @@
           </div>
           <div class="resources-body">
             <h4> <span class="gred-line">Blog </span></h4>
-            <p> <a href="https://commerce.walmart.com/content/walmart-commerce-tech/en_us/articles/order-picking-approaches.html">Decoding Efficiency: Deciding Between Order Picking Approaches</a> — See how your picking strategy can impact your customer experience</p>
+            <p> <a href="https://commerce.walmart.com/content/walmart-commerce-tech/en_us/articles/order-picking-approaches.html">Decoding efficiency: Deciding between order picking approaches</a> — See how your picking strategy can impact your customer experience</p>
           </div>
         </div>
       </div>
@@ -419,7 +420,7 @@
        <div class="cta-area-content">
         <h2> Ready to get started? We’re here to help.</h2>
         <p>Get more insight on how to keep your customers coming back in today’s hybrid shopping world.</p>
-        <a class="chat-btn big-btn" href="javascript:void(0)"> Let’s chat</a>
+        <a class="chat-btn big-btn" href="javascript:void(0)"><span>Let’s chat</span></a>
        </div>
       </div>
     </div>
@@ -446,7 +447,7 @@
 <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
  
   <script src="assets/js/vendor/jquery-3.4.1.min.js"></script>
-  <script src="assets/js/video.js"></script>
+ 
   <script src="assets/js/main.js"></script>
  
 

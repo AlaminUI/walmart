@@ -33,6 +33,11 @@ if(counter <2){
 }
  
 
+document.getElementById('videoplay').addEventListener('click',function(){
+  this.classList.add('d-none')
+  document.getElementById('video').classList.remove('d-none')
+})
+
   // Get all sections that have an ID defined
   const sections = document.querySelectorAll("section[id]");
  
