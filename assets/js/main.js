@@ -36,6 +36,7 @@ if(counter <2){
 document.getElementById('videoplay').addEventListener('click',function(){
   this.classList.add('d-none')
   document.getElementById('video').classList.remove('d-none')
+  document.getElementById('video').play()
 })
 
   // Get all sections that have an ID defined
