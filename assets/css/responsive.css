@@ -45,7 +45,9 @@
     p {
         font-size: 20px;
     }
-    
+    .video-content p {
+        font-size: 20px;
+    }
     .profite-content ul li {
         font-size: 20px;
     }
