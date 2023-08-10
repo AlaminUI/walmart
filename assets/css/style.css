@@ -1,4 +1,6 @@
-@font-face {
+ 
+
+ @font-face {
   font-family: 'Bogle';
   src: url('../webfonts/Bogle-Black.woff2') format('woff2'),
       url('../webfonts/Bogle-Black.woff') format('woff'),
@@ -249,7 +251,9 @@ a.chat-btn span {
     position: absolute;
     left: 50%;
     top: calc(50% + 3px);
-    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
 }
 a.chat-btn:hover {
   background: #52a2ffbf;
@@ -262,8 +266,8 @@ a.chat-btn:hover {
   left: 0;
   width: 100%;
   height: 3px;
-  background: transparent -webkit-gradient(linear, right top, left top, from(#06F27B), color-stop(88%, #3D8AE1), color-stop(100%, #054A91), to(#52A2FF)) 0% 0% no-repeat padding-box;
   background: transparent -o-linear-gradient(right, #06F27B 0%, #3D8AE1 88%, #054A91 100%, #52A2FF 100%) 0% 0% no-repeat padding-box;
+  background: transparent -webkit-gradient(linear, right top, left top, from(#06F27B), color-stop(88%, #3D8AE1), color-stop(100%, #054A91), to(#52A2FF)) 0% 0% no-repeat padding-box;
   background: transparent linear-gradient(270deg, #06F27B 0%, #3D8AE1 88%, #054A91 100%, #52A2FF 100%) 0% 0% no-repeat padding-box;
 }
 .nav-items ul li a.active:after{
@@ -273,8 +277,8 @@ a.chat-btn:hover {
   left: 0;
   width: 100%;
   height: 3px;
-  background: transparent -webkit-gradient(linear, right top, left top, from(#06F27B), color-stop(88%, #3D8AE1), color-stop(100%, #054A91), to(#52A2FF)) 0% 0% no-repeat padding-box;
   background: transparent -o-linear-gradient(right, #06F27B 0%, #3D8AE1 88%, #054A91 100%, #52A2FF 100%) 0% 0% no-repeat padding-box;
+  background: transparent -webkit-gradient(linear, right top, left top, from(#06F27B), color-stop(88%, #3D8AE1), color-stop(100%, #054A91), to(#52A2FF)) 0% 0% no-repeat padding-box;
   background: transparent linear-gradient(270deg, #06F27B 0%, #3D8AE1 88%, #054A91 100%, #52A2FF 100%) 0% 0% no-repeat padding-box;
 }
 .nav-items ul li a:after {
@@ -475,8 +479,8 @@ span.gred-line:after {
   position: absolute;
   left: 0;
   bottom: -4px;
-  background: transparent -webkit-gradient(linear, right top, left top, from(#06F27B), color-stop(88%, #3D8AE1), color-stop(100%, #054A91), to(#52A2FF)) 0% 0% no-repeat padding-box;
   background: transparent -o-linear-gradient(right, #06F27B 0%, #3D8AE1 88%, #054A91 100%, #52A2FF 100%) 0% 0% no-repeat padding-box;
+  background: transparent -webkit-gradient(linear, right top, left top, from(#06F27B), color-stop(88%, #3D8AE1), color-stop(100%, #054A91), to(#52A2FF)) 0% 0% no-repeat padding-box;
   background: transparent linear-gradient(270deg, #06F27B 0%, #3D8AE1 88%, #054A91 100%, #52A2FF 100%) 0% 0% no-repeat padding-box;
   content: "";
   width: 100%;
@@ -510,8 +514,8 @@ section.proven-result-area:after {
   content: "";
   position: absolute;
   left: 0;
-  background: transparent -webkit-gradient(linear, right top, left top, from(#06F27B), color-stop(88%, #3D8AE1), color-stop(100%, #054A91), to(#52A2FF)) 0% 0% no-repeat padding-box;
   background: transparent -o-linear-gradient(right, #06F27B 0%, #3D8AE1 88%, #054A91 100%, #52A2FF 100%) 0% 0% no-repeat padding-box;
+  background: transparent -webkit-gradient(linear, right top, left top, from(#06F27B), color-stop(88%, #3D8AE1), color-stop(100%, #054A91), to(#52A2FF)) 0% 0% no-repeat padding-box;
   background: transparent linear-gradient(270deg, #06F27B 0%, #3D8AE1 88%, #054A91 100%, #52A2FF 100%) 0% 0% no-repeat padding-box;
 }
 .golocal-card {
@@ -673,7 +677,9 @@ img.dreamforce-round-image {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .join-us-inner {
     max-width: 680px;
@@ -789,8 +795,12 @@ footer {
     color: #fff !important;
     font-size: 18px;
     font-weight: 500;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: self-start;
+    -webkit-box-align: self-start;
+        -ms-flex-align: self-start;
+            align-items: self-start;
 }
  
 
