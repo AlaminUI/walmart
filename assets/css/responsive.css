@@ -84,12 +84,7 @@
         height: auto !important;
     }
     
-    .join-wrap {
-        -webkit-box-align: self-start;
-            -ms-flex-align: self-start;
-                align-items: self-start;
-    }
-    
+  
     section.cta-area {
         padding: 90px 0px;
     }
@@ -146,7 +141,10 @@
                 flex-direction: column;
         cursor: pointer;
     }
-    
+    .join-us-inner {
+        max-width: 100%;
+        padding-right: 0;
+    }
     div#humberger span {
         width: 100%;
         display: block;
@@ -412,6 +410,11 @@
     .hbspt-form {
         padding: 32px;
         z-index: 9999;
+        top: 8px;
+        transform: translate(-50%,0);
+        height: 100%;
+        overflow-y: scroll;
+        border-radius: 0px;
     }
     .profite-content {
         padding-right: 0;

@@ -32,14 +32,18 @@ if(counter <2){
  
 }
  
-player = videojs('video');
-document.getElementById('videoplay').addEventListener('click',function(){
-  this.classList.add('d-none')
-  document.getElementById('video').classList.remove('d-none')
-  // document.getElementById('video').play()
-  player.play()
-})
+// document.getElementById('videoplay').addEventListener('click',function(){
+//   this.classList.add('d-none')
+//   document.getElementById('video').classList.remove('d-none')
+//   // document.getElementById('video').play()
+//   player.play()
+// })
 
+// window.addEventListener("scroll", function(){
+//   if(window.pageYOffset > 200){
+//     document.getElementById('video').play()
+//       }
+// });
 
   // Get all sections that have an ID defined
   const sections = document.querySelectorAll("section[id]");

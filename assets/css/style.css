@@ -240,14 +240,16 @@ a.chat-btn {
   height: 50px;
   width: 170px;
   font-weight: 700 !important;
-  display: flex !important;
-  justify-content: center;
-  align-items: center;
+  display: block;
+  position: relative;
 }
 a.chat-btn span {
     display: block;
-    line-height: 20px;
-    margin-top: 3px;
+    line-height: 25px;
+    position: absolute;
+    left: 50%;
+    top: calc(50% + 3px);
+    transform: translate(-50%,-50%);
 }
 a.chat-btn:hover {
   background: #52a2ffbf;
@@ -288,7 +290,7 @@ a.chat-btn:hover:after {
 header {
   padding: 24px 0px;
   top: 0;
-  z-index: 9991;
+  z-index: 999;
   background: #fff;
   width: 100%;
   position: relative;
@@ -321,7 +323,6 @@ a.chat-btn.big-btn{
     font-size: 22px !important;
 }
 a.chat-btn.big-btn span {
-    margin-top: 6px;
 }
 .fancybox-content {
   max-width: 800px!important;
@@ -665,18 +666,19 @@ section.resources-area {
 }
 img.dreamforce-round-image {
   width: 100%;
-  max-width: 540px;
-  margin-top: 30px;
+  max-width: 364px;
+  margin-top: 0;
 }
 .join-wrap {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    align-items: center;
 }
-
+.join-us-inner {
+    max-width: 680px;
+    padding-right: 50px;
+}
 .join-item p {
     margin: 0;
     padding-bottom: 12px;
@@ -762,16 +764,16 @@ footer {
   top: calc(50% + 20px);
   left: 50%;
   -webkit-transform: translate(-50%,-50%);
-      -ms-transform: translate(-50%,-50%);
-          transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
   background: #0D145B;
   padding: 54px;
-  z-index: 999;
+  z-index: 9991;
   width: 100%;
   max-width: 700px;
   border-radius: 30px;
   -webkit-box-shadow: 0px 0px 20px #00000029;
-          box-shadow: 0px 0px 20px #00000029;
+  box-shadow: 0px 0px 20px #00000029;
 }
 
 .hbspt-form p {
@@ -779,13 +781,16 @@ footer {
   font-size: 16px;
   margin-bottom: 8px;
   margin-top: 10px;
+  color: #fff;
 }
  
 
 .hbspt-form label {
     color: #fff !important;
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 500;
+    display: flex;
+    align-items: self-start;
 }
  
 
@@ -809,7 +814,7 @@ fieldset {
 }
 
 fieldset div {
-    width: 100%;
+    width: 100% !important;
 }
 
 .hbspt-form p span {
@@ -838,7 +843,16 @@ fieldset div {
     -o-transition: 0.5s;
     transition: 0.5s;
 }
+.hbspt-form label input {
+  display: inline-block;
+  width: 24px !important;
+  float: none !important;
+  margin-top: 3px;
+}
 
+.hs-form-booleancheckbox span {
+  margin-left: 8px !important;
+}
 .hs_submit input:hover {
     background: #52a2ffbf;
 }
@@ -856,7 +870,7 @@ body.form-active:after {
     width: 100%;
     height: 100vh;
     content: "";
-    z-index: 99;
+    z-index: 999;
 }
 
 body.form-active {
@@ -908,16 +922,17 @@ div#humberger {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   color: #fff;
   border-radius: 4px;
   font-size: 21px;
   font-weight: bold;
   cursor: pointer;
+  font-family: sans-serif;
 }
 .submitted-message p {
   color: #fff;
