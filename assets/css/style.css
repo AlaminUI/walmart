@@ -239,21 +239,13 @@ a.chat-btn {
   border-radius: 32px;
   margin-left: 24px;
   text-align: center;
-  height: 50px;
-  width: 170px;
   font-weight: 700 !important;
-  display: block;
-  position: relative;
+  padding: 13px 38px;
 }
 a.chat-btn span {
     display: block;
-    line-height: 25px;
-    position: absolute;
-    left: 50%;
-    top: calc(50% + 3px);
-    -webkit-transform: translate(-50%,-50%);
-        -ms-transform: translate(-50%,-50%);
-            transform: translate(-50%,-50%);
+    width: 100%;
+    margin-bottom: -4px;
 }
 a.chat-btn:hover {
   background: #52a2ffbf;
@@ -320,11 +312,12 @@ header {
 }
 
 a.chat-btn.big-btn{
-    width: 100%;
     max-width: 250px;
     margin: 0 auto;
-    height: 56px;
     font-size: 22px !important;
+    padding: 15px 30px;
+    display: inline-block;
+    width: 100%;
 }
 a.chat-btn.big-btn span {
 }
@@ -816,7 +809,7 @@ fieldset {
 
 .input input {
     width: 100% !important;
-    padding: 8px 14px;
+    padding: 5px 14px;
 }
 
 .input {
