@@ -461,3 +461,13 @@
 @media (min-width: 320px) and (max-width: 575.98px) { 
  
 }
+
+@media not all and (min-resolution:.001dpcm)
+{ @supports (-webkit-appearance:none) and (stroke-color:transparent) {
+
+    a.chat-btn span {
+        display: block;
+        width: 100%;
+        margin-bottom: 0;
+    }
+}}
