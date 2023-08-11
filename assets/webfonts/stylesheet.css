@@ -1,5 +1,15 @@
 @font-face {
     font-family: 'Bogle';
+    src: url('Bogle-Bold.woff2') format('woff2'),
+        url('Bogle-Bold.woff') format('woff'),
+        url('Bogle-Bold.svg#Bogle-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bogle';
     src: url('Bogle-Black.woff2') format('woff2'),
         url('Bogle-Black.woff') format('woff'),
         url('Bogle-Black.svg#Bogle-Black') format('svg');
@@ -20,26 +30,6 @@
 
 @font-face {
     font-family: 'Bogle';
-    src: url('Bogle-LightItalic.woff2') format('woff2'),
-        url('Bogle-LightItalic.woff') format('woff'),
-        url('Bogle-LightItalic.svg#Bogle-LightItalic') format('svg');
-    font-weight: 300;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Bogle';
-    src: url('Bogle-BoldItalic.woff2') format('woff2'),
-        url('Bogle-BoldItalic.woff') format('woff'),
-        url('Bogle-BoldItalic.svg#Bogle-BoldItalic') format('svg');
-    font-weight: bold;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Bogle';
     src: url('Bogle-Light.woff2') format('woff2'),
         url('Bogle-Light.woff') format('woff'),
         url('Bogle-Light.svg#Bogle-Light') format('svg');
@@ -50,30 +40,10 @@
 
 @font-face {
     font-family: 'Bogle';
-    src: url('Bogle-Bold.woff2') format('woff2'),
-        url('Bogle-Bold.woff') format('woff'),
-        url('Bogle-Bold.svg#Bogle-Bold') format('svg');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Bogle';
-    src: url('Bogle-Medium.woff2') format('woff2'),
-        url('Bogle-Medium.woff') format('woff'),
-        url('Bogle-Medium.svg#Bogle-Medium') format('svg');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Bogle';
-    src: url('Bogle-MediumItalic.woff2') format('woff2'),
-        url('Bogle-MediumItalic.woff') format('woff'),
-        url('Bogle-MediumItalic.svg#Bogle-MediumItalic') format('svg');
-    font-weight: 500;
+    src: url('Bogle-ThinItalic.woff2') format('woff2'),
+        url('Bogle-ThinItalic.woff') format('woff'),
+        url('Bogle-ThinItalic.svg#Bogle-ThinItalic') format('svg');
+    font-weight: 100;
     font-style: italic;
     font-display: swap;
 }
@@ -90,11 +60,41 @@
 
 @font-face {
     font-family: 'Bogle';
+    src: url('Bogle-LightItalic.woff2') format('woff2'),
+        url('Bogle-LightItalic.woff') format('woff'),
+        url('Bogle-LightItalic.svg#Bogle-LightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bogle';
     src: url('Bogle-Thin.woff2') format('woff2'),
         url('Bogle-Thin.woff') format('woff'),
         url('Bogle-Thin.svg#Bogle-Thin') format('svg');
     font-weight: 100;
     font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bogle';
+    src: url('Bogle-BoldItalic.woff2') format('woff2'),
+        url('Bogle-BoldItalic.woff') format('woff'),
+        url('Bogle-BoldItalic.svg#Bogle-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bogle';
+    src: url('Bogle-MediumItalic.woff2') format('woff2'),
+        url('Bogle-MediumItalic.woff') format('woff'),
+        url('Bogle-MediumItalic.svg#Bogle-MediumItalic') format('svg');
+    font-weight: 500;
+    font-style: italic;
     font-display: swap;
 }
 
@@ -110,11 +110,11 @@
 
 @font-face {
     font-family: 'Bogle';
-    src: url('Bogle-ThinItalic.woff2') format('woff2'),
-        url('Bogle-ThinItalic.woff') format('woff'),
-        url('Bogle-ThinItalic.svg#Bogle-ThinItalic') format('svg');
-    font-weight: 100;
-    font-style: italic;
+    src: url('Bogle-Medium.woff2') format('woff2'),
+        url('Bogle-Medium.woff') format('woff'),
+        url('Bogle-Medium.svg#Bogle-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
     font-display: swap;
 }
 
