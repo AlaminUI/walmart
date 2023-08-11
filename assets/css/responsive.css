@@ -19,7 +19,7 @@
     .nav-items ul li a {
         font-size: 16px;
     }
-    
+
     h1 {
         font-size: 53px;
     }
@@ -121,6 +121,19 @@
         padding-bottom: 26px;
         background: #fff;
         margin: 0;
+        gap:0px;
+        
+    }
+    .nav-items ul li {
+        margin-top: 20px;
+    }
+    
+    a.chat-btn {
+        margin-left: 0;
+    }
+    
+    .nav-items ul li:last-child {
+        margin-top: 20px;
     }
     div#humberger {
         position: absolute;
@@ -307,7 +320,22 @@
     .store-assist-right p {
         font-size: 18px;
     }
-    
+    .profite-content ul li:before {
+     
+        top: 7px;
+        
+        width: 5px;
+        height: 5px;
+     
+    }
+    .retailer-content ul li:before {
+       
+        top: 6px;
+       
+        width: 5px;
+        height: 5px;
+        
+    }
     p {
         font-size: 18px;
     }
@@ -473,3 +501,15 @@
         margin-bottom: 0;
     }
 }}
+
+ 
+  @media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    a.chat-btn span {
+        display: block;
+        width: 100%;
+        margin-bottom: 0;
+    }
+}
