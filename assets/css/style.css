@@ -555,9 +555,10 @@ section.golocal-area {
 }
 .retailer-content ul li {
     font-size: 26px;
-    margin-bottom: 20px;
+    margin-bottom: 26px;
     position: relative;
     padding-left: 16px;
+    line-height: 28px;
 }
 .profite-content ul li:before {
     position: absolute;
@@ -573,7 +574,7 @@ section.golocal-area {
 .retailer-content ul li:before {
     position: absolute;
     left: 0;
-    top: 19px;
+    top: 11px;
     content: "";
     width: 6px;
     height: 6px;
