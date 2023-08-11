@@ -179,7 +179,7 @@ h6 {
 }
 
 p {
-  font-size: 26px;
+  font-size: 22px;
   font-weight: 400;
   line-height: 1.3;
   margin-bottom: 30px;
@@ -385,7 +385,6 @@ img.play-btn {
 }
 
 .video-content p {
-    font-size: 26px;
 }
 
 .video-wrap button img {
@@ -413,11 +412,11 @@ img.walmart-logo {
 }
 .store-assist-right p {
   margin: 0;
-  font-size: 26px;
   padding-top: 10px;
 }
 .store-assist-right {
   padding-left: 32px;
+  margin-top: -8px;
 }
 .profite-img img {
   width: 100%;
@@ -425,7 +424,7 @@ img.walmart-logo {
 }
 
 .profite-content ul li {
-  font-size: 26px;
+  font-size: 22px;
   line-height: 1.3;
   margin-bottom: 14px;
   position: relative;
@@ -553,7 +552,7 @@ section.golocal-area {
     margin-top: 20px;
 }
 .retailer-content ul li {
-    font-size: 26px;
+    font-size: 22px;
     margin-bottom: 26px;
     position: relative;
     padding-left: 16px;
@@ -712,7 +711,7 @@ img.dreamforce-round-image {
 }
 
 .join-item h4 {
-    font-size: 28px;
+    font-size: 27px;
     font-weight: 500;
     color: #000000;
 }
